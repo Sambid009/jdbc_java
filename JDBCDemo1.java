@@ -63,7 +63,7 @@ class JDBCExample{
                           
 
 
-            String insQuery = "insert into tbl_std values(3,'McCarthy','Male','CSIT','50k')";
+            String insQuery = "insert into tbl_std values(5,'Chris','Male','IIOT','20k')";
             //execute query
                              Statement st = con.createStatement();
                              //executeUpdate return int value 0 or 1
@@ -224,10 +224,10 @@ public class JDBCDemo1 {
     public static void main(String[] args) {
         JDBCExample e1 = new JDBCExample();
        // e1.createTable();
-       //e1.insertData();
-       e1.dispalyData();
+       e1.insertData();
+       //e1.dispalyData();
        //e1.updateData();
-       e1.deleteData();
+     //  e1.deleteData();
     }
     
 }
